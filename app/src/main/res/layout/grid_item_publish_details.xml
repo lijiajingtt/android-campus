@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="170dp"
+    android:layout_height="35dp"
+    android:background="@drawable/publish_grid_tag"
+    >
+    <ImageView
+        android:id="@+id/publish_detail_logo"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:src="@drawable/workroom"/>
+    <EditText
+        android:id="@+id/publish_detail_txt"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:textColor="@color/highGray"
+        android:background="@null"
+        android:textSize="8dp"/>
+</LinearLayout>

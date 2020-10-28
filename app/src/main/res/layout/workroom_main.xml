@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="校园工作室"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_title">
+
+        <TextView
+            android:id="@+id/jianjie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="简介"
+            android:textSize="14dp"
+            android:gravity="bottom|center"
+            android:textColor="#fff"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/xiangmu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="项目"
+            android:textSize="14dp"
+            android:gravity="bottom|center"
+            android:textColor="#fff"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/dongtai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动态"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:textColor="#fff"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_title">
+
+        <ImageView
+            android:id="@+id/jianjie_arrow"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@drawable/bg_top_triangle"
+            android:textColor="#fff"/>
+        <ImageView
+            android:id="@+id/xiangmu_arrow"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:visibility="invisible"
+            android:src="@drawable/bg_top_triangle"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+        <ImageView
+            android:id="@+id/dongtai_arrow"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:visibility="invisible"
+            android:src="@drawable/bg_top_triangle"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/workroom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

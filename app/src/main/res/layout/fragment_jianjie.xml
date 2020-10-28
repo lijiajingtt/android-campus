@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13dp">
+        <TextView
+            android:id="@+id/jieshao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:text="南京工业职业技术大学毗邻著名的钟山风景区，是一所历史悠久、底蕴厚重的百年名校。前身是我国近现代民主革命家、社会活动家、教育家黄炎培先生创建于1918年的中华职业学校——我国第一所以“职业”冠名的学校。"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/jiantou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jianjie_down"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/jianjie_dutyman"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:text="院系"/>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/jianjie_grid_duty"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4">
+
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/jianjie_group"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:text="部门"/>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/jianjie_grid_group"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4">
+
+        </GridView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:text="申请加入"
+            android:background="@drawable/workroom_btn"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

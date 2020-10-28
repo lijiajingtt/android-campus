@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#00000000"/>
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/main_tab_bar"/>
+
+    <LinearLayout
+        android:id="@+id/main_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_border"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/main_event"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/tab_menu_event"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:text="项目"
+                android:gravity="center|bottom"
+                android:textColor="#7c65da"
+                android:textSize="8dp"
+                android:background="#00ff00ff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_workroom"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/tab_menu_workroom"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:text="工作室"
+                android:gravity="center|bottom"
+                android:textColor="#7c65da"
+                android:textSize="8dp"
+                android:background="#00ff00ff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_scene"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/tab_menu_scene"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:text="圈子"
+                android:gravity="center|bottom"
+                android:textColor="#7c65da"
+                android:textSize="8dp"
+                android:background="#00ff00ff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_mine"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/tab_menu_mine"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:text="我的"
+                android:gravity="center|bottom"
+                android:textColor="#7c65da"
+                android:textSize="8dp"
+                android:background="#00ff00ff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

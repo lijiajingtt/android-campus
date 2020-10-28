@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef">
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EC7E07" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ed7e07">
+
+        <ImageView
+            android:id="@+id/zhgl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_left"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/linear_mine_item"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="头像"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="9dp"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/mine_head"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/linear_mine_item"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/msz_neme"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="用户名"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/set_username"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:textSize="12sp"
+            android:text="揭秘"/>
+        <View
+            android:id="@+id/msz_v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/highGray"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/msz_neme"/>
+        <TextView
+            android:id="@+id/msz_pass"
+            android:layout_below="@id/msz_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="密码"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/set_password"
+            android:layout_below="@id/msz_v1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:textSize="12sp"
+            android:text="****"/>
+        <View
+            android:id="@+id/msz_v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/highGray"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/msz_pass"/>
+        <TextView
+            android:id="@+id/msz_phone"
+            android:layout_below="@id/msz_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="手机号"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/set_phoneNumber"
+            android:layout_below="@id/msz_v2"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:textSize="12sp"
+            android:text="138****8989"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

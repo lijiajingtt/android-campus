@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="#efefef"
+    android:descendantFocusability="blocksDescendants" >
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraintLayout"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/workroom_bk">
+
+        <ImageView
+            android:id="@+id/image_workroom"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/workroom_1" />
+
+        <TextView
+            android:id="@+id/text_workroom"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="76dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="14dp" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_workroom"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:background="@drawable/workroom_btn"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="#fff"
+        android:textSize="14dp" />
+</FrameLayout>

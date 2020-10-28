@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef">
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EC7E07" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ed7e07">
+
+        <ImageView
+            android:id="@+id/set_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_left"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zhgl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/linear_mine_item"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="9dp"
+            android:text="账号管理"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/mine_head"
+            android:layout_toLeftOf="@+id/zhgl_left"/>
+
+        <ImageView
+            android:id="@+id/zhgl_left"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:src="@mipmap/ic_right"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/linear_mine_item"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="2G/3G/4G网络下载图片"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp" />
+        <Switch
+            android:id="@+id/set_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:shadowColor="#000"/>
+        <View
+            android:id="@+id/set_v1"
+            android:layout_below="@id/set_switch"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/highGray"/>
+        <TextView
+            android:id="@+id/set_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:layout_below="@id/set_v1"
+            android:layout_alignParentLeft="true"
+            android:text="清除缓存"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/set_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:layout_below="@id/set_v1"
+            android:layout_alignParentRight="true"
+            android:text="15.79M"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/linear_mine_item"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/set_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="退出登录"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

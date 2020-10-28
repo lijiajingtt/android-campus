@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:search="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.jiangnan.artstudio.SearchActivity">
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white" />
+
+    <com.jiangnan.artstudio.search.CommolySearchView
+        android:id="@+id/csv_show"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dip"
+        android:background="@color/white"
+        search:SearchTextColor="#ff0000"
+        search:SearchTextSize="14sp"
+        >
+    </com.jiangnan.artstudio.search.CommolySearchView>
+
+    <View
+        android:id="@+id/set_v1"
+        android:layout_below="@id/set_switch"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/highGray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="项目"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/set_v2"
+        android:layout_below="@id/set_switch"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/highGray"/>
+
+    <ListView
+        android:id="@+id/lv_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+
+</LinearLayout>

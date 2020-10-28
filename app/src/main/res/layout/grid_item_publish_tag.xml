@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="65dp"
+    android:layout_height="30dp"
+    android:background="@drawable/publish_grid_tag">
+    <TextView
+        android:id="@+id/publish_tag_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="网页"
+        android:gravity="center"
+        android:textSize="14dp"/>
+</LinearLayout>
